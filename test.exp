@@ -1,0 +1,9 @@
+#!/usr/bin/expect -f
+
+set timeout 60
+
+spawn git pull
+expect "Password"
+send "gaditek123!\r"
+interact
+
